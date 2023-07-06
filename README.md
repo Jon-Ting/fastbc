@@ -1,8 +1,8 @@
-# FastBC
+# fastBC
 
 ## Description
 
-`FastBC` is a repository containing the C++ codes required for the computation of box-counting dimension of the point cloud representation of the surface of interest of a given 3D object consisting of overlapping spherical entities, a functionality offered by the [`Sphractal`](https://sphractal.readthedocs.io/en/latest/) Python package. 
+`fastBC` is a repository containing the C++ codes required for the computation of box-counting dimension of the point cloud representation of the surface of interest of a given 3D object consisting of overlapping spherical entities, a functionality offered by the [`Sphractal`](https://sphractal.readthedocs.io/en/latest/) Python package. 
 
 Once compiled successfully, the executable takes in the following as input argument:
 * Resolution of the 3D binary image (int).
