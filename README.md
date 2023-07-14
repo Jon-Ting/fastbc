@@ -21,14 +21,14 @@ Users need to compile either `3DbinImBCcpu.cpp` or `3DbinImBCgpu.cpp` into an ex
 
 `3DbinImBCcpu.cpp` could be compiled by appropriate C++ compilers. 
 ```bash
-$ g++ 3DbinImBCcpu.cpp bcCPU.cpp -o 3DbinImBCcpu.exe
+g++ 3DbinImBCcpu.cpp bcCPU.cpp -o 3DbinImBCcpu.exe
 ```
 
 `3DbinImBCgpu.cpp` requires the following for successful compilation:
 * Machine with a capable [CUDA GPU](https://developer.nvidia.com/cuda-gpus)
 * [CUDA SDK Toolkit](https://developer.nvidia.com/cuda-toolkit)
 ```bash
-$ nvcc -O3 3DbinImBCgpu.cpp bcCUDA3D.cu -o 3DbinImBCgpu.exe
+nvcc -O3 3DbinImBCgpu.cpp bcCUDA3D.cu -o 3DbinImBCgpu.exe
 ```
 
 ## License
