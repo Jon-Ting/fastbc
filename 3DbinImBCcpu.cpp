@@ -13,7 +13,7 @@ void pointsTo3DImage(unsigned char* matrix, int* idxarr, int n) {
 int main(int argc, char* argv[]) {
     // Check command line arguments
     if (argc != 4) {
-        std::cerr << "Usage: " << argv[0] << " <input_file> <output_file> <grid_num>\n";
+        std::cerr << "Usage: " << argv[0] << " <grid_num> <input_file> <output_file>\n";
         return 1;
     }
 
