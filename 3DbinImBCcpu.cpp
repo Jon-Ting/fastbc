@@ -46,10 +46,10 @@ int main(int argc, char* argv[]) {
     std::fill(n3d, n3d + nn, 0);
     unsigned char* Icpu3d = new unsigned char[m * m * m];
     std::memcpy(Icpu3d, I3d, sizeof(unsigned char) * m * m * m);
-    auto start = std::chrono::system_clock::now();
+    // auto start = std::chrono::system_clock::now();
     seqBC3D(Icpu3d, m, n3d);
-    auto stop = std::chrono::system_clock::now();
-    std::chrono::duration<double> time_cpu = stop - start;
+    // auto stop = std::chrono::system_clock::now();
+    // std::chrono::duration<double> time_cpu = stop - start;
 
     // Display box-counting results
     // for (int i = 0; i < nn; i++)
