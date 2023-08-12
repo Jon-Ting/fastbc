@@ -11,7 +11,7 @@ Once compiled successfully, the executable takes in the following as input argum
 
 And runs the box-counting algorithm on the 3D binary image computed based onn the indices of voxels read from the input file, and outputs the box counts corresponding to each box length used to an output file with the specified name.
 
-It was built upon the work of [Juan Ruiz de Miras et al.](https://www.sciencedirect.com/science/article/pii/S1877750322002678), who distributed their source codes freely as [Fast Box-Counting Algorithm](https://www.ugr.es/~demiras/fbc/). The following files in this repository are obtained from [Fast Box-Counting Algorithm (October 2022 version)](https://www.ugr.es/~demiras/fbc/):
+It was built upon [the work of Juan Ruiz de Miras et al.](https://www.sciencedirect.com/science/article/pii/S1877750322002678), who distributed their source codes freely as `Fast Box-Counting Algorithm`. The following files in this repository are obtained from [Fast Box-Counting Algorithm (October 2022 version)](https://www.ugr.es/~demiras/fbc/):
 * bcCPU.cpp and bcCPU.h: C++ files with the implementation on CPU of the box-counting algorithm for binary 2D, 3D and 4D data
 * bcCUDA3D.cu and bcCUDA3D.cuh: CUDA/C++ files with the implementation on GPU of the box-counting algorithm for binary 3D data
 
