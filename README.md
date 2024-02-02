@@ -4,7 +4,7 @@
 
 `fastBC` is a repository containing the C++ codes required for the computation of box-counting dimension of the point cloud representation of the surface of interest of a given 3D object consisting of overlapping spherical entities, a functionality offered by the [`Sphractal`](https://sphractal.readthedocs.io/en/latest/) Python package. 
 
-Once compiled successfully, the executable takes in the following as input argument:
+Once compiled successfully, the program takes in the following as input argument:
 * Resolution of the 3D binary image (int).
 * Name of input file name (str) containing the indices of the occupied voxels.
 * Name of output file name (str) storing the box counts corresponding to each box length.
@@ -17,18 +17,18 @@ It was built upon [the work of Juan Ruiz de Miras et al.](https://www.sciencedir
 
 ## Usage and Compilation
 
-Users need to compile either `3DbinImBCcpu.cpp` or `3DbinImBCgpu.cpp` into an executable on their machine and pass the path to the executable to the function `sphractal.runBoxCnt()` or `sphractal.getVoxelBoxCnts()` if the computation of the box-counting dimension of the point cloud representation of the surface of interest is desired.
+Users need to compile either `3DbinImBCcpu.cpp` or `3DbinImBCgpu.cpp` on their machine and pass the path to the compiled program file to the function `sphractal.runBoxCnt()` or `sphractal.getVoxelBoxCnts()` if the computation of the box-counting dimension of the point cloud representation of the surface of interest is desired.
 
 `3DbinImBCcpu.cpp` could be compiled by appropriate C++ compilers. 
 ```bash
-g++ 3DbinImBCcpu.cpp bcCPU.cpp -o 3DbinImBCcpu.exe
+g++ 3DbinImBCcpu.cpp bcCPU.cpp -o 3DbinImBCcpu
 ```
 
 `3DbinImBCgpu.cpp` requires the following for successful compilation:
 * Machine with a capable [CUDA GPU](https://developer.nvidia.com/cuda-gpus)
 * [CUDA SDK Toolkit](https://developer.nvidia.com/cuda-toolkit)
 ```bash
-nvcc -O3 3DbinImBCgpu.cpp bcCUDA3D.cu -o 3DbinImBCgpu.exe
+nvcc -O3 3DbinImBCgpu.cpp bcCUDA3D.cu -o 3DbinImBCgpu
 ```
 
 ## License
