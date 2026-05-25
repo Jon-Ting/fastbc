@@ -45,6 +45,6 @@ DOI: https://doi.org/10.1016/j.jocs.2022.101908
 
 ## Contact
 
-Email: `Jonathan.Ting@anu.edu.au`/`jonting97@gmail.com`
+Email: `jonting97@gmail.com`
 
 Feel free to reach out if you have any questions, suggestions, or feedback.
